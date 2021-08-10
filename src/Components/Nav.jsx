@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./nav.css";
 
 export default function Nav() {
   const [dark, setDark] = useState(false);
@@ -9,13 +10,19 @@ export default function Nav() {
     setDark(!dark);
   };
   return (
-    <nav>
-      <ul>
-        <div className="logo">
-          &lt; <span>Suraj</span> /&gt;{" "}
-          <small>A Passionate Software Developer</small>
-        </div>
-        <div className="links">
+    <div>
+      <header className="header">
+        <a href="" className="logo">
+          <span className="grey-color"> &lt;</span>
+          <span className="logo-name">Suraj</span>
+          <span className="grey-color">/&gt;</span>
+          <small>A Passionate Software Developer </small>
+        </a>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <ul className="menu">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -26,15 +33,10 @@ export default function Nav() {
             <NavLink to="/projects">Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact">Contact Me</NavLink>
           </li>
-          <li>
-            <button className="dark-mode-btn" onClick={darkMode}>
-              <i className="fas fa-adjust"></i>
-            </button>
-          </li>
-        </div>
-      </ul>
-    </nav>
+        </ul>
+      </header>
+    </div>
   );
 }
