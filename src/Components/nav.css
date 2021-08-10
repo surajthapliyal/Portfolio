@@ -1,6 +1,4 @@
-/* header */
-
-.header {
+header .header {
   max-width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -178,9 +176,14 @@
     text-align: center;
     bottom: -25px;
   }
+  .header ul {
+    max-height: none;
+    margin-top: 80px;
+    padding: 20px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .logo small {
     font-size: 10px;
     position: absolute;
@@ -188,7 +191,12 @@
     left: -5px;
     width: 100%;
     text-align: center;
-    bottom: -25px;
+    bottom: -18px;
+  }
+  .header ul {
+    max-height: none;
+    margin-top: 80px;
+    padding: 20px;
   }
 }
 
@@ -203,5 +211,10 @@
     left: -15px;
     bottom: -10px;
     text-align: center;
+  }
+  .header ul {
+    max-height: none;
+    margin-top: 150px;
+    padding: 20px;
   }
 }
