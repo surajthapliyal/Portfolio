@@ -127,6 +127,7 @@
   color: rgba(0, 0, 0, 0.52);
   left: -2px;
   bottom: -10px;
+  text-align: center;
 }
 
 .logo {
@@ -173,9 +174,9 @@
     position: absolute;
     color: rgba(0, 0, 0, 0.52);
     left: 20px;
-    width : 100%;
+    width: 100%;
     text-align: center;
-    bottom: -25px;
+    bottom: -30px;
   }
 }
 
@@ -189,5 +190,6 @@
     color: rgba(0, 0, 0, 0.52);
     left: -15px;
     bottom: -10px;
+    text-align: center;
   }
 }
