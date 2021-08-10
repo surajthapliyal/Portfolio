@@ -168,12 +168,24 @@
   }
 }
 
+@media (max-width: 350px) {
+  .logo small {
+    font-size: 10px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.52);
+    left: -15px;
+    width: 100%;
+    text-align: center;
+    bottom: -25px;
+  }
+}
+
 @media (max-width: 420px) {
   .logo small {
     font-size: 10px;
     position: absolute;
     color: rgba(0, 0, 0, 0.52);
-    left: 0;
+    left: -5px;
     width: 100%;
     text-align: center;
     bottom: -25px;
