@@ -166,12 +166,12 @@ header .header {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) and (min-width:0){
   .logo small {
     font-size: 10px;
     position: absolute;
     color: rgba(0, 0, 0, 0.52);
-    left: -15px;
+    left: 5px;
     width: 100%;
     text-align: center;
     bottom: -25px;
@@ -183,7 +183,7 @@ header .header {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 550px) {
   .logo small {
     font-size: 10px;
     position: absolute;
@@ -200,7 +200,7 @@ header .header {
   }
 }
 
-@media (max-width: 960px) and (min-width: 768px) {
+@media (max-width: 960px) and (min-width: 680px) {
   .header {
     font-size: 12px;
   }
