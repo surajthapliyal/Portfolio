@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 body {
   padding: 10px;
@@ -22,7 +28,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   display: flex;
-  padding: 20px;
+  padding: 12px 20px;
   text-align: center;
   align-items: center;
   color: black;
@@ -40,17 +46,18 @@ nav ul li a:hover {
 .logo {
   width: 50%;
   font-weight: 600;
-  color : rgba(0, 0, 0, 0.685);
+  color: rgba(0, 0, 0, 0.685);
   font-size: 25px;
   text-shadow: 0 5px 6px rgba(0, 0, 0, 0.233);
   position: relative;
+  cursor: default;
 }
 .logo small {
   font-size: 10px;
   position: absolute;
-  color : rgba(0, 0, 0, 0.52);
-  left:-12px;
-  bottom:-10px;
+  color: rgba(0, 0, 0, 0.52);
+  left: -12px;
+  bottom: -10px;
 }
 .logo span {
   font-style: italic;
@@ -117,10 +124,76 @@ nav ul li a:hover {
 .social-links i:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 10px rgba(32, 32, 32, 0.383);
+  background-color: black;
 }
 .dark-mode-btn {
   padding: 10px;
   border: none;
   background: none;
   font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .leftCol p {
+    width: 100%;
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+  }
+  .logo {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 10px;
+    text-shadow: 0 5px 6px rgba(0, 0, 0, 0.233);
+    position: relative;
+  }
+  .logo small {
+    font-size: 8px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.52);
+    left: -20px;
+    text-align: center;
+    bottom: -30px;
+  }
+  .logo span {
+    font-style: italic;
+    font-size: 13px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  nav ul li a {
+    text-decoration: none;
+    display: flex;
+    padding: 8px;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+  .social-links {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li button {
+    display: none;
+  }
 }
