@@ -8,13 +8,23 @@ export default function SocialLinks() {
   };
   return (
     <div className="social-links">
-      <a href={links.github} className="github" target="_blank">
+      <a
+        href={links.github}
+        className="github"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="fab fa-github"></i>
       </a>
-      <a href={links.linkedIn} className="linkedin" target="_blank">
+      <a
+        href={links.linkedIn}
+        className="linkedin"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="fab fa-linkedin" />
       </a>
-      <a href={links.gmail} className="gmail" target="_blank">
+      <a href={links.gmail} className="gmail" target="_blank" rel="noreferrer">
         <i class="fab fa-google"></i>
       </a>
     </div>

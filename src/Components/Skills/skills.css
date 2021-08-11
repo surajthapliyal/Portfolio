@@ -1,0 +1,93 @@
+.progress-container {
+  position: relative;
+}
+.progress-container .skills {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  padding: 10px 8px 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.progress-container .skills:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+}
+.progress-container .skills .skillName {
+  position: relative;
+  width: 110px;
+  text-align: right;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.progress-container .skills .percent {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: #dadada;
+  overflow: hidden;
+}
+.progress-container .skills .percent .skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background: #55198b;
+  animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+.skills-visit {
+  font-size: 15px;
+}
+.skills-visit span a {
+  color: rgb(119, 119, 119);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  P {
+    text-align: center;
+  }
+  .skill-progress {
+    width: 100%;
+  }
+  .all-skills {
+    width: 100%;
+    font-size: 12px;
+    margin: auto;
+  }
+  .skillName {
+    text-align: left;
+  }
+  .progress-container .skills {
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 18px;
+  }
+  .progress-container .skills .percent {
+    width: calc(100% - 50px);
+  }
+  .progress-container .skills .skillName {
+    margin-top: 4px;
+    width : 70px;
+  }
+}
