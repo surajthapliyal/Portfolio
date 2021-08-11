@@ -4,7 +4,7 @@ export default function SocialLinks() {
   const links = {
     linkedIn: "https://www.linkedin.com/in/suraj-thapliyal-56ba10190/",
     github: "https://github.com/surajthapliyal",
-    gmail: "surajthapliyal18@gmail.com",
+    gmail: "mailto:surajthapliyal18@gmail.com",
   };
   return (
     <div className="social-links">

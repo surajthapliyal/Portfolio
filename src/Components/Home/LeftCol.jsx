@@ -1,6 +1,6 @@
 import React from "react";
-import SocialLinks from "./SocialLinks";
 import { Link, NavLink } from "react-router-dom";
+import SocialLinks from './../SocialLinks';
 
 const LeftCol = () => {
   return (

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function LeftSkillCol() {
   return (
     <div className="leftCol">
-      <h1 className="name">Skills and Experiences</h1> <br />
+      <h1 className="name">Skills and Expertise</h1> <br />
       <p className="para">
         I create successful responsive websites that are fast, easy to use, and
         built with best practices. The main area of my expertise is HTML, CSS,

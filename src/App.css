@@ -39,7 +39,7 @@ body {
   font-weight: 500;
   margin-top: 20px;
   letter-spacing: 0;
-  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.322);
+  text-shadow: 0 5px 10px black;
 }
 .para {
   margin-top: 25px;
@@ -80,7 +80,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 .social-links i:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .btn-leftCol {

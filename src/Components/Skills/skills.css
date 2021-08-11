@@ -46,7 +46,10 @@
   background: #55198b;
   animation: animate 4s ease-in-out forwards;
 }
-
+.progress-container .skills .percent .skill-progress:hover {
+  background-color: #fff;
+  border: 3px solid#55198b;
+}
 @keyframes animate {
   from {
     width: 0;
@@ -88,6 +91,6 @@
   }
   .progress-container .skills .skillName {
     margin-top: 4px;
-    width : 70px;
+    width: 70px;
   }
 }
