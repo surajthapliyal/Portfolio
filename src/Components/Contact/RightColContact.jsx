@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import Input from "./Input";
 
 export default function RightColContact() {
   const [name, setName] = useState("");
@@ -71,33 +72,28 @@ export default function RightColContact() {
         <p className="para2">
           If you have other request or question, don’t hesitate to use the form.
         </p>
-        <label htmlFor="name">Name: *</label>
-        <input
-          type="text"
+        <Input
           name="name"
+          text="Name: *"
           required="true"
           placeholder="Name"
-          autoComplete="off"
           value={name}
           onChange={handleNameChange}
         />
-        <label htmlFor="email">Email: *</label>
-        <input
-          type="text"
+        <Input
           name="email"
+          text="Email: *"
           required="true"
           placeholder="Email"
-          autoComplete="off"
           value={email}
           onChange={handleEmailChange}
         />
         <div className="emailError">{emailError}</div>
-        <label htmlFor="subject">Subject: </label>
-        <input
-          type="text"
+        <Input
           name="subject"
-          placeholder="Email subject"
-          autoComplete="off"
+          text="Subject: *"
+          required="false"
+          placeholder="Email Subject"
           value={subject}
           onChange={handleSubjectChange}
         />
