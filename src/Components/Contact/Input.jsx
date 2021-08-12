@@ -10,7 +10,7 @@ export default function Input({
 }) {
   return (
     <>
-      <label htmlFor={name}>{text}</label>
+      {/* <label htmlFor={name}>{text}</label> */}
       <input
         type="text"
         name={name}

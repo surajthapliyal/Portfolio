@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Input from "./Input";
 
@@ -8,6 +8,11 @@ export default function RightColContact() {
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState("");
   const [emailError, setEmailError] = useState("");
+
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
     const isValid = validate();
@@ -77,6 +82,7 @@ export default function RightColContact() {
           text="Name: *"
           required="true"
           placeholder="Name"
+          ref={nameRef}
           value={name}
           onChange={handleNameChange}
         />
@@ -85,6 +91,7 @@ export default function RightColContact() {
           text="Email: *"
           required="true"
           placeholder="Email"
+          ref={emailRef}
           value={email}
           onChange={handleEmailChange}
         />
@@ -97,13 +104,14 @@ export default function RightColContact() {
           value={subject}
           onChange={handleSubjectChange}
         />
-        <label htmlFor="Message">Message: *</label>
+        {/* <label htmlFor="Message">Message: *</label> */}
         <textarea
           name="message"
           autoComplete="off"
           cols="20"
           rows="8"
           required="true"
+          ref={messageRef}
           value={message}
           onChange={handleMessageChange}
           placeholder="Write your message here"

@@ -52,7 +52,7 @@ button {
   border: none;
   background: none;
   border: 1.5px solid white;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   color: white;
   font-weight: 500;
   box-shadow: 0 5px 10px black;
@@ -62,12 +62,18 @@ button {
 input:focus,
 textarea:focus {
   transform: translateY(-4px);
+  border-color: #197e8b;
+  border-width: 3px;
+}
+.invalid {
+  border-color: red;
 }
 button {
   box-sizing: content-box;
   max-width: 200px;
   margin-top: 20px;
   color: black;
+  border-radius: 5px;
   cursor: pointer;
   background-color: #fff;
   text-align: center;

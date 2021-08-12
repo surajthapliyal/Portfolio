@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { Fade } from "react-reveal";
 import ProjectCard from "./ProjectCard";
+import Icons from "./Icons";
 export default function Projects() {
   return (
     <Fade bottom duration={1000} distance="40px">
@@ -11,15 +12,7 @@ export default function Projects() {
       <div className="projects-container">
         <Fade left duration={1500} distance="1000px">
           <div className="projects-header">
-            <i className="fab fa-react" />
-            <i className="fab fa-html5" />
-            <i className="fab fa-css3-alt" />
-            <i className="fab fa-java" />
-            <i className="fab fa-js-square" />
-            <i className="fab fa-python" />
-            <i className="fab fa-npm" />
-            <i className="fab fa-node" />
-            <i className="fas fa-database" />
+            <Icons />
           </div>
         </Fade>
         <div className="all-projects">
