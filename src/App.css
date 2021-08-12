@@ -107,7 +107,7 @@ body {
 .btn-leftCol:hover {
   color: black;
   transform: translateY(-3px);
-  background-color: #000000;
+  background-color: #59208b7e;
   transition: ease-in 0.3s;
 }
 .footer-div {
