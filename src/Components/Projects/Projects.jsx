@@ -31,7 +31,7 @@ export default function Projects() {
           <ProjectCard
             name="CHATS"
             description="A ReactJS, NodeJS based application where user can chat and share images to each other."
-            link="https://github.com/surajthapliyal/Todo-List"
+            link=""
           />
         </div>
         <Fade bottom duration={2000} distance="60px">
