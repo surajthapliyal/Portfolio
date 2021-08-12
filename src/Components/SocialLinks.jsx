@@ -25,7 +25,7 @@ export default function SocialLinks() {
         <i className="fab fa-linkedin" />
       </a>
       <a href={links.gmail} className="gmail" target="_blank" rel="noreferrer">
-        <i class="fab fa-google"></i>
+        <i className="fab fa-google"></i>
       </a>
     </div>
   );
