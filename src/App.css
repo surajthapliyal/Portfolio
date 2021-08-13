@@ -41,6 +41,9 @@ body {
   letter-spacing: 0;
   text-shadow: 0 5px 10px black;
 }
+.homepagename{
+  font-weight: 1000;
+}
 .para {
   margin-top: 25px;
   line-height: 2.5rem;
@@ -109,6 +112,10 @@ body {
   transform: translateY(-3px);
   background-color: #59208b7e;
   transition: ease-in 0.3s;
+}
+.leftCol-buttons-div{
+  display:flex;
+  justify-content: center;
 }
 .footer-div {
   display: flex;

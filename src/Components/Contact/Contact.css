@@ -4,6 +4,9 @@
   float: right;
   margin-top: 10px;
 }
+.para {
+  text-align: center;
+}
 .para2 {
   margin-top: 30px;
   color: rgb(175, 175, 175);
@@ -12,12 +15,20 @@
   line-height: 1.5rem;
 }
 .opportunity {
+  margin : auto;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   display: flex;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
 }
 .social-links i {
+  margin : auto;
   font-size: 30px;
 }
 .yn {
@@ -116,6 +127,7 @@ button:hover {
   }
   .para2 {
     margin-top: 30px;
+    text-align: center;
   }
 }
 @media (max-width: 400px) {
