@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import validator from "validator";
 import Input from "./Input";
 
 export default function RightColContact() {
@@ -61,15 +62,10 @@ export default function RightColContact() {
       setEmailError("");
       return true;
     }
-    let emailError = "";
-    if (!email.includes("@") || !email.includes(".com")) {
-      emailError = "Invalid Email!";
-    }
-    if (emailError) {
-      setEmailError(emailError);
-      return false;
-    }
-    return true;
+
+    const res = validator.isEmail(email);
+    if (!res) setEmailError("Invalid Email");
+    return res;
   };
   return (
     <div className="rightCol">
