@@ -3,6 +3,7 @@ import "./Projects.css";
 import { Fade } from "react-reveal";
 import ProjectCard from "./ProjectCard";
 import Icons from "./Icons";
+import { allProjects } from "./allProjects";
 export default function Projects() {
   return (
     <Fade bottom duration={1000} distance="40px">
@@ -16,16 +17,20 @@ export default function Projects() {
           </div>
         </Fade>
         <div className="all-projects">
-          <ProjectCard
-            name="TODO-LIST"
-            description="A react based application where user can add, update and remove todos."
-            link="https://github.com/surajthapliyal/Todo-List"
-          />
-          <ProjectCard
+          {allProjects.map((project) => {
+            return (
+              <ProjectCard
+                name={project.name}
+                description={project.description}
+                link={project.link}
+              />
+            );
+          })}
+          {/* <ProjectCard
             name="CHATS"
             description="A ReactJS, NodeJS based application where user can chat and share images to each other."
             link="https://github.com/surajthapliyal/Chats/tree/master"
-          />
+          /> */}
         </div>
         <Fade bottom duration={2000} distance="60px">
           <div className="github-graph">
