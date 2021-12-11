@@ -8,8 +8,7 @@ const LeftCol = () => {
       <p className="name homepagename">Hello World, I'm Suraj </p>
       <p className="para">
         A passionate Full Stack Software Developer having an experience of
-        building Web applications with JavaScript / ReactJs / NodeJs / Java
-        SpringBoot and some other cool libraries and frameworks.
+        building Web applications with JavaScript / ReactJs / NodeJs and some other cool libraries and frameworks.
       </p>
       <SocialLinks />
       <div className="leftCol-buttons-div">
