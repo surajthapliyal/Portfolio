@@ -7,8 +7,8 @@ const LeftCol = () => {
     <div className="leftCol">
       <p className="name homepagename">Hello World, I'm Suraj </p>
       <p className="para">
-        A passionate Full Stack Software Developer having an experience of
-        building Web applications with JavaScript / ReactJs / NodeJs and some other cool libraries and frameworks.
+        A passionate software development and problem solving geek, having experience in building web apps and competitive programming,
+        skilled in full stack web development and data structures & algorithms, with a keen interest in applying software solutions to solve real world problems efficiently.
       </p>
       <SocialLinks />
       <div className="leftCol-buttons-div">
